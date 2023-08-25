@@ -7,6 +7,9 @@ export const components = {
     blockquote: ({ children }: any) => (
       <blockquote className="border-l-purple-500">{children}</blockquote>
     ),
+    hardBreak: ({ children }: any) => (
+      <br className="border-l-purple-500">{children}</br>
+    ),
 
     // Ex. 2: rendering custom styles
     customHeading: ({ children }: any) => (
