@@ -22,7 +22,7 @@ const components = {
 
 export default function Post({ post }: { post: SanityDocument }) {
   return (
-    <main className="container mx-auto prose prose-lg p-4">
+    <main className="prose prose-lg">
       <h1 className="font-bold text-foreground mb-5 text-lg">{post.title}</h1>
       {post?.body ? (
         <PortableText value={post.body} components={components} />
