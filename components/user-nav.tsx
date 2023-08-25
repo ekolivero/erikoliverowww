@@ -61,12 +61,12 @@ export function UserNav() {
               <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
             </DropdownMenuItem>
           </Link>
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <DropdownMenuItem className="md:hidden">
               Contact Me
               <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
             </DropdownMenuItem>
-          </Link>
+          </Link> */}
           <DropdownMenuSeparator className="md:hidden" />
           <a
             href="https://github.com/ekolivero"

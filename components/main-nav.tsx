@@ -39,7 +39,7 @@ export function MainNav({
         <Link
           href="/blog"
           className={`text-sm ${
-            pathname !== "/blog" && "text-muted-foreground"
+            pathname.includes("/blog") === false && "text-muted-foreground"
           } font-medium transition-colors hover:text-primary`}
         >
           Blog
@@ -52,14 +52,14 @@ export function MainNav({
         >
           Videos
         </Link>
-        <Link
+        {/*  <Link
           href="/contact"
           className={`text-sm ${
             pathname !== "/contact" && "text-muted-foreground"
           } font-medium transition-colors hover:text-primary`}
         >
           Contact Me
-        </Link>
+        </Link> */}
       </nav>
       <nav
         className={cn(

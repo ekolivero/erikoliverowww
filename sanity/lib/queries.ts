@@ -2,7 +2,7 @@ import { groq } from "next-sanity";
 
 // Get all posts
 export const postsQuery = groq`*[_type == "post" && defined(slug.current)]{
-    _id, title, slug
+    _id, title, slug, mainImage, _updatedAt
   }`;
 
 // Get a single post by its slug
