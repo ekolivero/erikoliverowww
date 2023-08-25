@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import { CaretSortIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 export function UserNav() {
   return (
@@ -42,22 +43,30 @@ export function UserNav() {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem className="md:hidden">
-            About
-            <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem className="md:hidden">
-            Blog
-            <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem className="md:hidden">
-            Videos
-            <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem className="md:hidden">
-            Contact Me
-            <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
-          </DropdownMenuItem>
+          <Link href="/">
+            <DropdownMenuItem className="md:hidden">
+              About
+              <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
+            </DropdownMenuItem>
+          </Link>
+          <Link href="/blog">
+            <DropdownMenuItem className="md:hidden">
+              Blog
+              <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
+            </DropdownMenuItem>
+          </Link>
+          <Link href="/videos">
+            <DropdownMenuItem className="md:hidden">
+              Videos
+              <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
+            </DropdownMenuItem>
+          </Link>
+          <Link href="/contact">
+            <DropdownMenuItem className="md:hidden">
+              Contact Me
+              <DropdownMenuShortcut>Visit</DropdownMenuShortcut>
+            </DropdownMenuItem>
+          </Link>
           <DropdownMenuSeparator className="md:hidden" />
           <a
             href="https://github.com/ekolivero"

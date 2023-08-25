@@ -14,6 +14,5 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }: { params: any }) {
   const post = await sanityFetch<SanityDocument>({ query: postQuery, params });
-
   return <Post post={post} />;
 }
