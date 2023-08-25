@@ -68,7 +68,7 @@ export function MainNav({
         )}
         {...props}
       >
-        <h2> {routes[pathname]} </h2>
+        <h2> {pathname.includes("/blog") ? "Blog" : routes[pathname]} </h2>
       </nav>
     </>
   );
