@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <main className="w-full">
       <NavBar />
-      <div className="container max-w-xl mt-10 mx-auto">{children}</div>
+      <div className="container max-w-xl mt-12 mx-auto">{children}</div>
     </main>
   );
 }
