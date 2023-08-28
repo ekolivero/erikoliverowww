@@ -1,10 +1,6 @@
 import Link from "next/link";
 import type { SanityDocument } from "@sanity/client";
-import imageUrlBuilder from "@sanity/image-url";
-import { client } from "@/sanity/lib/client";
 import { format } from "timeago.js";
-
-const builder = imageUrlBuilder(client);
 
 export default function Posts({ posts = [] }: { posts: SanityDocument[] }) {
   return (
